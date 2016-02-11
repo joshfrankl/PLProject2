@@ -19,7 +19,7 @@ public class Console {
     }
 
     public static String getString(String prompt) {
-        System.out.println(prompt);
+        System.out.print(prompt);
         String s = sc.nextLine();
         return s;
     }
