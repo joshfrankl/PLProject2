@@ -27,7 +27,7 @@ public class Console {
     public static int getInt(String prompt) {
         int i = 0;
         while (true) {
-            System.out.println(prompt);
+            System.out.print(prompt);
             try {
                 i = Integer.parseInt(sc.nextLine());
                 break;
@@ -42,7 +42,7 @@ public class Console {
     public static double getDouble(String prompt) {
         double d = 0;
         while (true) {
-            System.out.println(prompt);
+            System.out.print(prompt);
             try {
                 d = Double.parseDouble(sc.nextLine());
                 break;
