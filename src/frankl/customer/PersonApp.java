@@ -24,7 +24,7 @@ public class PersonApp {
                 customer.setCustomerNumber(customerNumber);
 
                 Console.displayLine();
-                Console.displayLine("You entered:\n" + customer.getDisplayText());
+                print(customer);
             }
             else if (input.equalsIgnoreCase("e")) {
                 String firstName = Console.getString("Enter first name: ");
@@ -39,7 +39,7 @@ public class PersonApp {
                 employee.setSSN(ssn);
 
                 Console.displayLine();
-                Console.displayLine("You entered:\n" + employee.getDisplayText());
+                print(employee);
             }
 
             Console.displayLine();
@@ -50,6 +50,10 @@ public class PersonApp {
             }
 
         }
+    }
+
+    public static void print(Person p) {
+        Console.displayLine("You entered:\n" + p.getDisplayText());
     }
 
 }
